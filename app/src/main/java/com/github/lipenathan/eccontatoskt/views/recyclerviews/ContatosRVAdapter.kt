@@ -11,10 +11,10 @@ import android.widget.Toast.LENGTH_LONG
 import android.widget.Toast.LENGTH_SHORT
 import androidx.recyclerview.widget.RecyclerView
 import com.github.lipenathan.eccontatoskt.R
-import com.github.lipenathan.eccontatosrefactor.modelo.dataaccess.retrofit.InterfaceRestContatos
-import com.github.lipenathan.eccontatosrefactor.modelo.dataaccess.retrofit.RetrofitInstance
-import com.github.lipenathan.eccontatosrefactor.modelo.dataaccess.to.TokenTO
-import com.github.lipenathan.eccontatosrefactor.modelo.dominio.Contato
+import com.github.lipenathan.eccontatoskt.servicos.rest.retrofit.InterfaceRestContatos
+import com.github.lipenathan.eccontatoskt.servicos.rest.retrofit.RetrofitInstance
+import com.github.lipenathan.eccontatoskt.servicos.rest.to.TokenTO
+import com.github.lipenathan.eccontatoskt.dominio.Contato
 import io.reactivex.Observer
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable

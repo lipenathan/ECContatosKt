@@ -1,4 +1,4 @@
-package com.github.lipenathan.eccontatosrefactor.modelo.dataaccess.to
+package com.github.lipenathan.eccontatoskt.servicos.rest.to
 
 data class TokenTO (var token: String = "") {
     override fun toString(): String {

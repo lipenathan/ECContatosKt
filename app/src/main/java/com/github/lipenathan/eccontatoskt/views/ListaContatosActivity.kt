@@ -10,10 +10,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.github.lipenathan.eccontatoskt.R
 import com.github.lipenathan.eccontatoskt.views.recyclerviews.ContatosRVAdapter
-import com.github.lipenathan.eccontatosrefactor.modelo.dataaccess.retrofit.InterfaceRestContatos
-import com.github.lipenathan.eccontatosrefactor.modelo.dataaccess.retrofit.RetrofitInstance
-import com.github.lipenathan.eccontatosrefactor.modelo.dataaccess.to.TokenTO
-import com.github.lipenathan.eccontatosrefactor.modelo.dominio.Contato
+import com.github.lipenathan.eccontatoskt.servicos.rest.retrofit.InterfaceRestContatos
+import com.github.lipenathan.eccontatoskt.servicos.rest.retrofit.RetrofitInstance
+import com.github.lipenathan.eccontatoskt.servicos.rest.to.TokenTO
+import com.github.lipenathan.eccontatoskt.dominio.Contato
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import io.reactivex.Observer
 import io.reactivex.android.schedulers.AndroidSchedulers

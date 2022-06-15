@@ -1,6 +1,6 @@
-package com.github.lipenathan.eccontatosrefactor.modelo.dataaccess.retrofit
+package com.github.lipenathan.eccontatoskt.servicos.rest.retrofit
 
-import com.github.lipenathan.eccontatosrefactor.modelo.dataaccess.to.LoginRestTO
+import com.github.lipenathan.eccontatoskt.servicos.rest.to.LoginRestTO
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

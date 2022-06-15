@@ -8,11 +8,13 @@ import android.widget.EditText
 import android.widget.Toast
 import android.widget.Toast.LENGTH_LONG
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 import com.github.lipenathan.eccontatoskt.R
-import com.github.lipenathan.eccontatosrefactor.modelo.dataaccess.retrofit.InterfaceRestContatos
-import com.github.lipenathan.eccontatosrefactor.modelo.dataaccess.retrofit.RetrofitInstance
-import com.github.lipenathan.eccontatosrefactor.modelo.dataaccess.to.TokenTO
-import com.github.lipenathan.eccontatosrefactor.modelo.dominio.Contato
+import com.github.lipenathan.eccontatoskt.servicos.rest.retrofit.InterfaceRestContatos
+import com.github.lipenathan.eccontatoskt.servicos.rest.retrofit.RetrofitInstance
+import com.github.lipenathan.eccontatoskt.servicos.rest.to.TokenTO
+import com.github.lipenathan.eccontatoskt.databinding.ActivityCadastroContatosBinding
+import com.github.lipenathan.eccontatoskt.dominio.Contato
 import io.reactivex.Observer
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
@@ -30,10 +32,11 @@ class CadastroContatosActivity : AppCompatActivity() {
     private lateinit var restContatos: InterfaceRestContatos
     private var token = TokenTO()
     private val loginRest = RetrofitInstance.LOGIN_REST
+    private lateinit var cadastroBinding: ActivityCadastroContatosBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_cadastro_contatos)
+        cadastroBinding = DataBindingUtil.setContentView(this, R.layout.activity_cadastro_contatos)
         restContatos = RetrofitInstance.getRestContatos()
         vincularViews()
         btCadastrar.setOnClickListener(object : View.OnClickListener {

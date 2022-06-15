@@ -1,8 +1,8 @@
-package com.github.lipenathan.eccontatosrefactor.modelo.dataaccess.retrofit
+package com.github.lipenathan.eccontatoskt.servicos.rest.retrofit
 
-import com.github.lipenathan.eccontatosrefactor.modelo.dataaccess.to.LoginRestTO
-import com.github.lipenathan.eccontatosrefactor.modelo.dataaccess.to.TokenTO
-import com.github.lipenathan.eccontatosrefactor.modelo.dominio.Contato
+import com.github.lipenathan.eccontatoskt.servicos.rest.to.LoginRestTO
+import com.github.lipenathan.eccontatoskt.servicos.rest.to.TokenTO
+import com.github.lipenathan.eccontatoskt.dominio.Contato
 import io.reactivex.Observable
 import retrofit2.Call
 import retrofit2.http.*
